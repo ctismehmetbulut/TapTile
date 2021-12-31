@@ -1,0 +1,131 @@
+body {
+    background-color: white;
+    cursor: default;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+#initTimerWrapper{
+    text-align: center;
+    color: plum;
+}
+
+#initTimer {
+    font-size: 25vw;
+
+}
+
+#tile{
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+#tile td{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    color: gray;
+    text-align: center;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+}
+
+#info > *{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#table-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#info > * > *{
+    display: inline-block;
+    padding: 0;
+    margin: 0px 5px 0px 0px;
+    text-align: center;
+}
+
+#info:first-of-type > *{
+    font-size: 3vw;
+}
+
+#highScore{
+    margin-top: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+
+#score{
+    margin-top: -15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100px;
+    color: rgb(0, 255, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#counter{
+    margin-top: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    color: rgb(255, 0, 0);
+    text-shadow: -0.3px 0 black, 0 0.3px black, 0.3px 0 black, 0 -0.3px black;
+}
+
+#popup {
+    pointer-events: none;
+    position: absolute;
+    top: 25vh;
+    left: 12vw;
+}
+
+#popup > p {
+    /*width: 100vw;*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10vw;
+    color: rgb(255, 0, 0);
+    display: none;
+    /* color | offset-x | offset-y | blur-radius */
+    text-shadow: rgb(195, 195, 195) 2vw 2vw 10px;
+}
+
+#playAgain{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4vw;
+    text-align: center;
+}
+
+#pointBarWrapper{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#pointBar, #filledPart{
+    width: 100%;
+    height: 1.5vh;
+}
+
+#pointBar{
+    position: relative;
+    border: 0.2vw solid black;
+    background-color: blue;
+    width: 50%;
+}
+
+#filledPart{
+    background-color: deepskyblue;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}

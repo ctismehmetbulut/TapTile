@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./plugins/jquery.color.min.js"></script>
+    <script src="./script.js"></script>
+    <title>CTIS 255 Term Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="initTimerWrapper">
+        <p id="initTimer">3</p>
+    </div>
+
+    <div id="main">
+        <div id="info">
+            <div>
+                <p>HI-SCORE</p>
+                <p id="highScore"></p>
+            </div>
+            <div>
+                <p>SCORE</p>
+                <p id="score">0</p>
+            </div>
+            <div>
+                <p>TIME</p>
+                <p id="counter"></p>
+            </div>
+        </div>
+        
+        <div id="table-wrapper">
+            <table id="tile">
+                <tr>
+                    <td id="item00"></td>
+                    <td id="item01"></td>
+                    <td id="item02"></td>
+                    <td id="item03"></td>
+                </tr>
+                <tr>
+                    <td id="item10"></td>
+                    <td id="item11"></td>
+                    <td id="item12"></td>
+                    <td id="item13"></td>
+                </tr>
+                <tr>
+                    <td id="item20"></td>
+                    <td id="item21"></td>
+                    <td id="item22"></td>
+                    <td id="item23"></td>
+                </tr>
+                <tr>
+                    <td id="item30"></td>
+                    <td id="item31"></td>
+                    <td id="item32"></td>
+                    <td id="item33"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="pointBarWrapper">
+            <div id="pointBar">
+                <div id="filledPart"></div>
+            </div>
+        </div>
+    
+        <div id="popup">
+            <p>x</p>
+        </div>
+    
+        <div id="playAgain">
+            <p>Refresh the page or F5 to play again</p>
+        </div>
+    </div>
+
+    <script src="./plugins/jquery.confetti.js"></script>
+</body>
+</html>
